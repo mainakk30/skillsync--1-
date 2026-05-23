@@ -1,0 +1,22 @@
+.sd-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  align-items: start;
+}
+.sd-cat  { font-size:11px; font-weight:500; letter-spacing:1px; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+.sd-title { font-family:var(--font-display); font-size:1.9rem; line-height:1.2; margin-bottom:12px; }
+.sd-delivery { font-size:13px; color:var(--muted); margin-bottom:1.25rem; }
+.sd-desc  { font-size:15px; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; white-space:pre-wrap; }
+.sd-tags  { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:2rem; }
+.sd-tag   { font-size:12px; padding:4px 12px; border-radius:100px; background:var(--surface); border:0.5px solid var(--border); color:var(--muted); }
+.sd-section-title { font-family:var(--font-display); font-size:1.3rem; margin-bottom:1rem; }
+.sd-price { font-family:var(--font-display); font-size:1.8rem; }
+.sd-price span { font-family:var(--font-body); font-size:14px; color:var(--muted); font-weight:400; }
+
+@media (max-width:768px) {
+  .sd-layout { grid-template-columns:1fr; }
+  .sd-sidebar { order:-1; }
+}

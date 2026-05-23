@@ -1,0 +1,33 @@
+.dash-title { font-family: var(--font-display); font-size: 2rem; margin-bottom: 4px; }
+.dash-sub   { font-size: 14px; color: var(--muted); margin-bottom: 1.75rem; }
+
+.dash-tabs  { display: flex; gap: 6px; margin-bottom: 1.5rem; }
+.tab {
+  font-size: 13px; padding: 6px 16px; border-radius: 100px;
+  border: 0.5px solid var(--border); background: transparent;
+  cursor: pointer; color: var(--muted); transition: all 0.15s;
+  font-family: var(--font-body);
+}
+.tab:hover { border-color: var(--accent); color: var(--accent); }
+.tab--active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Bookings */
+.booking-list { display: flex; flex-direction: column; gap: 12px; }
+.booking-card__top {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; margin-bottom: 8px;
+}
+.booking-service { font-weight: 500; font-size: 14px; }
+.booking-meta    { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.booking-brief   { font-size: 13px; color: var(--ink); line-height: 1.6; margin-bottom: 10px; }
+.booking-actions { display: flex; gap: 8px; }
+
+/* Services */
+.service-list { display: flex; flex-direction: column; gap: 10px; }
+.service-row  {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 14px 16px;
+}
+
+/* New service form */
+.new-service-form { max-width: 600px; }

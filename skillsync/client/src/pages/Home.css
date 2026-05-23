@@ -1,0 +1,82 @@
+.section { padding: 3rem 0; }
+.section-label {
+  font-size: 11px; font-weight: 500; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem;
+}
+
+/* Hero */
+.hero { padding: 4rem 0 2rem; }
+.hero__eyebrow {
+  font-size: 11px; font-weight: 500; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--accent2); margin-bottom: 1rem;
+}
+.hero__title {
+  font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.1; color: var(--ink);
+}
+.hero__title em { font-style: italic; color: var(--accent); }
+.hero__sub {
+  font-size: 15px; font-weight: 300; color: var(--muted);
+  line-height: 1.7; margin: 1.25rem 0 2rem; max-width: 480px;
+}
+.hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero__stats { display: flex; gap: 2.5rem; margin-top: 2.5rem; flex-wrap: wrap; }
+.stat-num { font-family: var(--font-display); font-size: 1.9rem; color: var(--ink); }
+.hero__stats p { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* Categories */
+.cats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.cat-card {
+  background: #fff; border: 0.5px solid var(--border);
+  border-radius: 14px; padding: 1.1rem 1rem;
+  cursor: pointer; transition: all 0.2s;
+}
+.cat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.cat-icon { font-size: 22px; display: block; margin-bottom: 8px; }
+.cat-name { font-size: 13px; font-weight: 500; color: var(--ink); }
+
+/* Listings */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Steps */
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.step-card {
+  background: var(--surface); border-radius: 14px;
+  padding: 1.25rem; position: relative; overflow: hidden;
+}
+.step-num {
+  font-family: var(--font-display); font-size: 3rem;
+  color: var(--border); position: absolute; right: 14px; top: 6px; line-height: 1;
+  pointer-events: none;
+}
+.step-title { font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+.step-desc  { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* Footer CTA */
+.footer-cta {
+  text-align: center; padding: 4rem 1.5rem;
+  border-top: 0.5px solid var(--border);
+  background: var(--surface);
+}
+.footer-cta h2 {
+  font-family: var(--font-display); font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.footer-cta p { font-size: 14px; color: var(--muted); margin-bottom: 1.5rem; }
+
+@media (max-width: 768px) {
+  .cats-grid     { grid-template-columns: repeat(2, 1fr); }
+  .listings-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid    { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .listings-grid { grid-template-columns: 1fr; }
+}
